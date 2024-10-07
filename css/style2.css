@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#footer{
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+    
+}
+
+#menu{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    text-align: center;
+    width: 480px;
+    height: 30px;
+    justify-content: space-between;
+    background-color: brown;
+}   
+
+.menu{
+    flex-direction: row;
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+#redessociales{
+    margin-left: 900px;
+}
+
+
+
+
+
+
+
+
+
