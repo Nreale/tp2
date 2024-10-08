@@ -81,13 +81,14 @@ ul ul a{
 /* grilla1 */
 
 #grid-contenedor1{
+    margin-top: 50px;
     margin-left: 25%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
     grid-template-areas: 
-    'titulo imagen'
-    'parrafo imagen';
+    'titulo titulo titulo imagen'
+    'parrafo parrafo parrafo imagen';
     width: 50%;
     height: 300px;
     grid-column-gap: 25px;
@@ -119,6 +120,7 @@ ul ul a{
 /* grid 2 */
 
 #grid-contenedor2{
+    margin-top: 50px;
     margin-left: 25%;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
@@ -155,6 +157,7 @@ ul ul a{
 /* grilla 3 */
 
 #grid-contenedor3{
+    margin-top: 40px;
     margin-left: 25%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,6 +194,7 @@ ul ul a{
 /* grilla4 */
 
 #grid-contenedor4{
+    margin-top: 50px;
     margin-left: 25%;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
@@ -227,7 +231,7 @@ ul ul a{
 /* Footer */
 
 #footer{
-    margin-top: 1000px;
+    margin-top: 200px;
     height: 220px;
     width: 100%;
     background-color: aqua;
