@@ -75,3 +75,63 @@ ul ul a{
     color: black;
     margin-left: 20px;
 }
+
+/* Grid Principal */
+
+#grid-container{
+    padding: 20px 40px 0px 40px;
+    display: grid;
+    background-color: brown;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulo mapa"
+        "parrafo mapa"
+        "video video"
+        "tituloH tituloH"
+        "parrafo2 foto2";
+
+    height: 1200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+
+.titulo{
+    background-color: aqua;
+    grid-area: titulo;
+}
+.parrafo{
+    background-color: greenyellow;
+    grid-area: parrafo;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+}
+.fotoprincipal{
+    grid-area: mapa;
+}
+
+.video{
+    background-color: chocolate;
+    grid-area: video;
+    display: flex;
+    height: 400px;
+}
+
+.historia{
+    background-color: darkmagenta;
+    grid-area: tituloH;
+}
+
+.parrafo2{
+    background-color: gold;
+    grid-area: parrafo2;
+}
+
+.foto2{
+    background-color: springgreen;
+    grid-area: foto2;
+}
