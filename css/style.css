@@ -75,3 +75,36 @@ ul ul a{
     color: black;
     margin-left: 20px;
 }
+
+/* Grid Principal */
+
+#grid-container{
+    display: grid;
+    background-color: brown;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'titulo fotoprincipal'
+    'parrafo fotoprincipal'
+    'video video'
+    ;
+
+    height: 400px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+.titulo{
+    background-color: aqua;
+    grid-area: titulo;
+}
+.parrafo{
+    background-color: greenyellow;
+    grid-area: parrafo;
+}
+.fotoprincipal{
+    background-color: rgb(79, 79, 255);
+    grid-area: fotoprincipal;
+}
+
