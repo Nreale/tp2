@@ -3,6 +3,81 @@
     margin: 0;
 }
 
+/* Header */
+
+header{
+    display: flex;
+    height: 300px;
+    background: url(../assets/imagenes/fondo1.jpeg) center;
+    background-size: cover;
+}
+
+.fondo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    font-size: 18px;
+}
+
+#imagenP{
+    height: 190px;
+    width: 190px;
+    margin: 35px 30px 35px 50px; 
+}
+
+/* Menu */
+
+ul{
+    list-style: none;
+    font-size: 0;
+}
+
+li{
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    margin: 6px 0px 8px 0px;
+}
+
+ul ul{
+    position: absolute; 
+    display: none;
+    background-color: black;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+    background-color: transparent;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: #651800;
+}
+
+ul li:hover{
+    background-color: #77270f ;
+}
+ul ul a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+/* Footer */
+
 #footer{
     height: 220px;
     width: 100%;
