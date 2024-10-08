@@ -76,9 +76,49 @@ ul ul a{
     margin-left: 20px;
 }
 
+/* Grillas */
+
+/* grilla1 */
+
+#grid-contenedor1{
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+    'titulo imagen'
+    'parrafo imagen';
+    width: 50%;
+    height: 300px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    
+}   
+
+.titulo1{
+    grid-area: titulo;
+    justify-self: right;
+    font-size: 37px;
+}
+
+.imagen1{
+    grid-area: imagen;
+}
+
+.imagen1 img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.parrafo1{
+    grid-area: parrafo;
+    font-size: 25px;
+}
 /* Footer */
 
 #footer{
+    margin-top: 1000px;
     height: 220px;
     width: 100%;
     background-color: aqua;
