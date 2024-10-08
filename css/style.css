@@ -168,8 +168,8 @@ ul ul a{
 }
 
 .linea{
-    background-color: grey;
+    background-color: rgb(184, 184, 184);
     height: 5px;
-    margin: 50px;
+    margin: 60px;
     grid-area: linea;
 }
