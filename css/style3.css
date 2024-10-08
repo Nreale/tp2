@@ -28,12 +28,12 @@ header{
 
 /* Menu */
 
-ul{
+.ul{
     list-style: none;
     font-size: 0;
 }
 
-li{
+.li{
     display: inline-block;
     width: 25%;
     position: relative;
@@ -42,22 +42,22 @@ li{
     margin: 6px 0px 8px 0px;
 }
 
-ul ul{
+.ul ul{
     position: absolute; 
     display: none;
     background-color: black;
-}
+} 
 
-ul ul li{
+.ul ul li{
     display: block;
 }
 
-ul li:hover ul{
+.ul li:hover ul{
     display: block;
     background-color: transparent;
 }
 
-li a{
+.li a{
     text-decoration: none;
     color: white;
 }
@@ -66,11 +66,64 @@ nav{
     background-color: #651800;
 }
 
-ul li:hover{
+.ul li:hover{
     background-color: #77270f ;
 }
-ul ul a{
+.ul ul a{
     text-decoration: none;
     color: black;
     margin-left: 20px;
+}
+
+/* Flex Box y Carrouself*/
+
+#padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list .card-item{
+    list-style: none;
+
+}
+.card-list .card-item .card-link{
+    width: 300px;
+    display: block;
+    background-color: lightgrey;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: aqua ;
+}
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: aqua;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid aqua;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: red;
 }
