@@ -57,8 +57,8 @@ header{
 .ul li:hover ul{
     display: block;
     background-color: transparent;
-    height: 20px;
-    width: 300px;
+    margin-left: 4%;
+    text-align: justify;
 }
 
 .li a{
@@ -76,7 +76,6 @@ nav{
 .ul ul a{
     text-decoration: none;
     color: black;
-
     margin-top: 20px;
 }
 
