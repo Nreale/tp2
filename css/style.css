@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Header */
@@ -40,7 +41,6 @@ li{
     position: relative;
     font-size: 18px;
     text-align: center;
-    margin: 6px 0px 8px 0px;
 }
 
 ul ul{
@@ -56,6 +56,8 @@ ul ul li{
 ul li:hover ul{
     display: block;
     background-color: transparent;
+    width: 800px;
+    height: 20px;
 }
 
 li a{
@@ -100,31 +102,53 @@ ul ul a{
 }
 
 .titulo{
-    background-color: rgb(138, 177, 115);
+    background-color: #65A603;
     grid-area: titulo;
     margin: 0px 0px 0px 60px;
     padding: 10px;
     height: 55px;
     font-size: 25px;
+    animation: desplazar 2s;
 }
+
+@keyframes desplazar{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+
 .parrafo{
     padding: 10px;
-    background-color: rgb(216, 255, 211);
+    background-color: #65A603;
     grid-area: parrafo;
     font-size: 30px;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px 0px 60px 60px;
+    animation: desplazar 2s;
 }
 .fotoprincipal{
     grid-area: mapa;
     margin: 0px 60px 60px 0px;
     height: 400px;
+    animation: zoom 2s;
+}
+
+@keyframes zoom{
+    from{
+        opacity: 0;
+        transform: scale(0.5); 
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .video{
-    background-color: rgb(138, 177, 115);
+    background-color: #65A603;
     grid-area: video;
     display: flex;
     height: 600px;
@@ -132,10 +156,10 @@ ul ul a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(white, #65A603);
 }
 
 .historia{
-    background-color: darkmagenta;
     grid-area: tituloH;
     transform: translate(0px, -30px);
     display: flex;
@@ -146,28 +170,38 @@ ul ul a{
 }
 
 .historia h1{
-    margin: 44.5%;
-    font-size: 50px;
+    transform: translate(370%, 0px);
     color: white;
+    font-size: 50px;
 }
 
 .parrafo2{
-    background-color: rgb(138, 177, 115);
+    background-color: #65A603;
     grid-area: parrafo2;
     font-size: 30px;
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 300px;
     margin: 0px 0px 0px 60px;
     padding: 10px;
+    transition: transform 0.5s;
+}
+
+.parrafo2:hover{
+    transform: scale(1.05);
 }
 
 .foto2{
     grid-area: foto2;
     margin: 0px 60px 0px 0px;
     height: 300px;
+    transition: transform 0.5s;
 }
+
+.foto2:hover{
+    transform: scale(1.05);
+}
+
 
 .linea{
     background-color: rgb(184, 184, 184);
@@ -183,16 +217,22 @@ ul ul a{
 }
 
 .hijo{
-    width: 30%;
+    width: 25%;
     height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(138, 177, 115);
+    background-color: #65A603;
     font-size: 20px;
     margin: 10px;
+    padding: 15px;
     row-gap: 20px;
+    transition: transform 0.5s;
+}
+
+.hijo:hover{
+    transform: rotate(10deg);
 }
 
 /* Footer */
@@ -201,7 +241,7 @@ footer{
     margin-top: 100px;
     height: 260px;
     width: 100%;
-    background-color: #384001;  
+    background-color: #2E5902;  
 }
 
 #menu{
@@ -217,7 +257,7 @@ footer{
     flex-direction: row;
     width: 380px;
     height: 34px;
-    background-color: #651800;
+    background-color: #442604;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
@@ -258,5 +298,5 @@ footer{
 
 .copyR{
     margin: 40px 0px 40px 0px;
-    background-color: #384001;
+    background-color: #2E5902;
 }
