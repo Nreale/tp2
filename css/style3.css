@@ -55,6 +55,8 @@ header{
 .ul li:hover ul{
     display: block;
     background-color: transparent;
+    width: 284px;
+    height: 20px;
 }
 
 .li a{
@@ -82,7 +84,7 @@ nav{
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    background:  rgb(138, 177, 115);
+    background:  #65a603;
     border-radius: 40px;
     margin: 80px 120px 0px 120px;;
 }
@@ -147,7 +149,7 @@ footer{
     margin-top: 100px;
     height: 260px;
     width: 100%;
-    background-color: #384001;  
+    background-color: #2e5902;  
 }
 
 #menu{
@@ -163,7 +165,7 @@ footer{
     flex-direction: row;
     width: 380px;
     height: 34px;
-    background-color: #651800;
+    background-color: #442604;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
@@ -204,7 +206,7 @@ footer{
 
 .copyR{
     margin: 40px 0px 40px 0px;
-    background-color: #384001;
+    background-color: #2e5902;
 }
 
 .linea{
@@ -212,4 +214,133 @@ footer{
     height: 5px;
     margin: 60px;
     grid-area: linea;
+}
+
+/* Grilla */
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'foto1 foto2'
+    'foto3 foto4';
+    height: 100%;
+    margin-left: 80px;
+    position: relative;
+}
+
+/*Foto1*/
+
+.foto1{
+    grid-area: foto1;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#grid-container .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#grid-container .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #65a603;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+#grid-container .back h3 {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#grid-container:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+#grid-container:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*Foto2*/
+
+.foto2 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.foto2{
+    grid-area: foto2;
+    margin-top: 200px;
+    margin-left: 50px ;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+/*Foto3*/
+
+.foto3{
+    grid-area: foto3;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.foto3 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Foto4*/
+
+.foto4{
+    grid-area: foto4;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.foto4 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;   
 }
