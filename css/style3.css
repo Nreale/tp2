@@ -75,55 +75,68 @@ nav{
     margin-left: 20px;
 }
 
-/* Flex Box y Carrouself*/
+/* Flex Box y Carrousel*/
 
 #padre{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: justify;
+    background:  rgb(138, 177, 115);
+    border-radius: 40px;
+    margin: 80px 120px 0px 120px;;
 }
 
-.card-list .card-item{
-    list-style: none;
-
+.hijo1{
+    margin-top: 40px;
 }
-.card-list .card-item .card-link{
-    width: 300px;
-    display: block;
-    background-color: lightgrey;
-    padding: 18px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
+.hijo2{
+    margin: 40px 80px 0px 80px;
 }
 
-.card-list .card-item .card-link:hover{
-    border-color: aqua ;
+.slider-blox {
+    height: auto;
+    margin: 50px  auto;
+    overflow: hidden;
 }
-.card-list .card-link .card-image{
+
+.slider-blox ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-blox li {
     width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.card-list .card-link .card-button{
-    height: 35px;
-    width: 35px;
-    color: aqua;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid aqua;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
+.slider-blox img {
+    width: 50%;
+    border-radius: 40px;
+    
 }
 
-.card-list .card-link:hover .card-button {
-    color: #fff;
-    background: red;
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    70% { margin-left: -100%;}
+
+    75% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    .slider-blox {
+        width: 100%;
+    }
 }
