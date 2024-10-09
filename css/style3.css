@@ -27,6 +27,18 @@ header{
     margin: 35px 30px 35px 50px; 
 }
 
+/* Gradients */
+
+.gradient{
+    height: 20px;
+    background: linear-gradient(#651800, white);
+}
+
+.gradientfot{
+    height: 40px;
+    background: linear-gradient(white, #2E5902);
+}
+
 /* Menu */
 
 .ul{
@@ -146,18 +158,15 @@ nav{
 /* Footer */
 
 footer{
-    margin-top: 100px;
     height: 260px;
     width: 100%;
-    background-color: #2e5902;  
+    background-color: #2E5902;  
 }
 
 #menu{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     margin-left: 25px; 
-    
 }
 
 #menu2{
@@ -175,7 +184,6 @@ footer{
 .menu{
     flex-direction: row;
     font-size: 25px;
-    
 }
 
 .link{
@@ -212,7 +220,7 @@ footer{
 .linea{
     background-color: rgb(184, 184, 184);
     height: 5px;
-    margin: 60px;
+    margin: 60px 60px 0px 60px;
     grid-area: linea;
 }
 
@@ -225,8 +233,10 @@ footer{
     'foto1 foto2'
     'foto3 foto4';
     height: 100%;
-    margin-left: 80px;
-    position: relative;
+    margin: 0px 100px 100px 100px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 /*Foto1*/
@@ -234,31 +244,56 @@ footer{
 .foto1{
     grid-area: foto1;
     display: flex;
-    height: 450px;
-    width: 450px;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background: url(../assets/imagenes/flora4.jpg) center;
+    background-size: cover;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.foto1:hover{
+    transform: scale(1.1, 1.1);
+    transition: 2s;
+}
+
+.blur h3{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+.blur p{
+    margin: 0px 10px 10px 10px;
+}
+.blur{
+    backdrop-filter: blur(10px);
+    margin: 20px;
+    border-radius: 30px;
 }
 
 /*Foto2*/
 
-.foto2 img{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-}
-
 .foto2{
     grid-area: foto2;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 50px ;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     width: 400px;
     height: 400px;
+    background: url(../assets/imagenes/flora5.jpg) center;
+    background-size: cover;
+    flex-direction: column;
+    text-align: justify;
 }
 
-
+.foto2:hover{
+    transform: scale(1.1, 1.1);
+    transition: 2s;
+}
 /*Foto3*/
 
 .foto3{
@@ -268,29 +303,32 @@ footer{
     border-radius: 50%;
     width: 400px;
     height: 400px;
+    background: url(../assets/imagenes/flora6.jpg) center;
+    background-size: cover;
+    flex-direction: column;
+    text-align: justify;
 }
 
-.foto3 img{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+.foto3:hover{
+    transform: scale(1.1, 1.1);
+    transition: 2s;
 }
-
 /*Foto4*/
 
 .foto4{
     grid-area: foto4;
-    margin-top: 180px;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     width: 400px;
     height: 400px;
-    
+    background: url(../assets/imagenes/flora7.jpg) center;
+    background-size: cover;
+    flex-direction: column;
+    text-align: justify;
 }
-
-.foto4 img{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;   
+.foto4:hover{
+    transform: scale(1.1, 1.1);
+    transition: 2s;
 }

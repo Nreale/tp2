@@ -4,6 +4,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.linea{
+    background-color: rgb(184, 184, 184);
+    height: 5px;
+    margin: 60px 60px 100px 60px;
+    grid-area: linea;
+}
+
 /* Header */
 
 header{
@@ -13,20 +20,25 @@ header{
     background-size: cover;
 }
 
-.fondo{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    font-size: 18px;
-}
-
 #imagenP{
     height: 190px;
     width: 190px;
     margin: 35px 30px 35px 50px; 
 } 
+
+
+/* Gradients */
+
+.gradient{
+    height: 20px;
+    background: linear-gradient(#651800, white);
+}
+
+.gradientfot{
+    height: 40px;
+    background: linear-gradient(white, #2E5902);
+}
+
 
 /* Menu */
 
@@ -230,7 +242,7 @@ nav{
     'imagen2 parrafo2';
     height: 340px;
     grid-column-gap: 25px;
-
+    margin-bottom: 80px;
 }
 
 .imagen4{
@@ -265,18 +277,15 @@ nav{
 /* Footer */
 
 footer{
-    margin-top: 0px;
     height: 260px;
     width: 100%;
     background-color: #2E5902;  
 }
 
 #menu{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     margin-left: 25px; 
-    
 }
 
 #menu2{
@@ -337,7 +346,7 @@ footer{
     text-align: justify;
     background:  #65A603;
     border-radius: 40px;
-    margin: 80px 120px 200px 120px;
+    margin: 80px 120px 100px 120px;
     justify-content: center;
 }
 
@@ -347,7 +356,6 @@ footer{
     display: flex;
     align-items: center;
     backdrop-filter: blur(5px);
-    
 }
 
 .hijo1{

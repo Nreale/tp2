@@ -28,14 +28,32 @@ header{
     margin: 35px 30px 35px 50px; 
 }
 
+/* Gradients */
+
+.gradient{
+    height: 20px;
+    background: linear-gradient(#651800, white);
+}
+
+.gradientvid{
+    grid-area: gradientvid;
+    height: 30px;
+    background: red;
+}
+
+.gradientfot{
+    height: 40px;
+    background: linear-gradient(white, #2E5902);
+}
+
 /* Menu */
 
-ul{
+.ul{
     list-style: none;
     font-size: 0;
 }
 
-li{
+.li{
     display: inline-block;
     width: 25%;
     position: relative;
@@ -44,23 +62,24 @@ li{
     margin: 6px 0px 8px 0px;
 }
 
-ul ul{
+.ul ul{
     position: absolute; 
     display: none;
-}
+    
+} 
 
-ul ul li{
+.ul ul li{
     display: block;
 }
 
-ul li:hover ul{
+.ul li:hover ul{
     display: block;
     background-color: transparent;
     margin-left: 4%;
     text-align: justify;
 }
 
-li a{
+.li a{
     text-decoration: none;
     color: white;
 }
@@ -69,14 +88,13 @@ nav{
     background-color: #651800;
 }
 
-ul li:hover{
+.ul li:hover{
     background-color: #77270f ;
 }
-
-ul ul a{
+.ul ul a{
     text-decoration: none;
     color: black;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
 /* Grid Principal */
@@ -86,10 +104,11 @@ ul ul a{
     display: grid;
     background-color: white;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "titulo mapa"
         "parrafo mapa"
+        "gradientvid gradientvid"
         "video video"
         "tituloH tituloH"
         "parrafo2 foto2"
@@ -156,23 +175,30 @@ ul ul a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(white, #65A603);
+    background-color: #2E5902;
 }
 
 .historia{
     grid-area: tituloH;
     transform: translate(0px, -30px);
     display: flex;
-    justify-content: center;
     height: 150px;
     background: url(../assets/imagenes/historia.png) center;
     background-size: cover;
 }
 
 .historia h1{
-    transform: translate(370%, 0px);
     color: white;
     font-size: 50px;
+}
+
+.fondo1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
 }
 
 .parrafo2{
@@ -211,6 +237,7 @@ ul ul a{
 }
 
 .padre{
+    margin: 30px 0px 30px 0px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -238,18 +265,15 @@ ul ul a{
 /* Footer */
 
 footer{
-    margin-top: 100px;
     height: 260px;
     width: 100%;
     background-color: #2E5902;  
 }
 
 #menu{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     margin-left: 25px; 
-    
 }
 
 #menu2{
