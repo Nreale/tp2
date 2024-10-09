@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Header */
@@ -40,7 +41,6 @@ li{
     position: relative;
     font-size: 18px;
     text-align: center;
-    margin: 6px 0px 8px 0px;
 }
 
 ul ul{
@@ -56,6 +56,8 @@ ul ul li{
 ul li:hover ul{
     display: block;
     background-color: transparent;
+    width: 800px;
+    height: 20px;
 }
 
 li a{
@@ -100,7 +102,7 @@ ul ul a{
 }
 
 .titulo{
-    background-color: #3B7302;
+    background-color: #65A603;
     grid-area: titulo;
     margin: 0px 0px 0px 60px;
     padding: 10px;
@@ -168,7 +170,7 @@ ul ul a{
 }
 
 .historia h1{
-    transform: translate(400%, 0px);
+    transform: translate(370%, 0px);
     color: white;
     font-size: 50px;
 }
