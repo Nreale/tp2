@@ -341,17 +341,23 @@ footer{
     justify-content: center;
 }
 
-.fondo{
+.fondo2{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     backdrop-filter: blur(5px);
+    justify-content: center;
     
 }
 
 .hijo1{
     margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background: url(../assets/imagenes/fondo1.jpeg) center;
+    background-size: cover;
 }
 
 .hijo2{
