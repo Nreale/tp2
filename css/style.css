@@ -93,7 +93,7 @@ ul ul a{
         "parrafo2 foto2"
         "linea linea";
 
-    height: 1200px;
+    height: 1750px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     
@@ -152,20 +152,21 @@ ul ul a{
 }
 
 .parrafo2{
-    background-color: gold;
+    background-color: rgb(138, 177, 115);
     grid-area: parrafo2;
     font-size: 30px;
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 200px;
+    height: 300px;
     margin: 0px 0px 0px 60px;
+    padding: 10px;
 }
 
 .foto2{
-    background-color: springgreen;
     grid-area: foto2;
     margin: 0px 60px 0px 0px;
+    height: 300px;
 }
 
 .linea{
@@ -173,4 +174,23 @@ ul ul a{
     height: 5px;
     margin: 60px;
     grid-area: linea;
+}
+
+.padre{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hijo{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(138, 177, 115);
+    font-size: 20px;
+    margin: 10px;
+    row-gap: 20px;
 }

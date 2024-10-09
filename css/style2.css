@@ -82,14 +82,14 @@ ul ul a{
 
 #grid-contenedor1{
     margin-top: 50px;
-    margin-left: 25%;
+    margin-left: 300px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
     grid-template-areas: 
     'titulo titulo titulo imagen'
     'parrafo parrafo parrafo imagen';
-    width: 50%;
     height: 300px;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
@@ -121,14 +121,14 @@ ul ul a{
 
 #grid-contenedor2{
     margin-top: 50px;
-    margin-left: 25%;
+    margin-left: 90px;
+    margin-right: 300px;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 0.4fr 1fr;
     grid-template-areas: 
     'imagen2 titulo2'
     'imagen2 parrafo2';
-    width: 50%;
     height: 300px;
     grid-column-gap: 25px;
 
@@ -157,15 +157,15 @@ ul ul a{
 /* grilla 3 */
 
 #grid-contenedor3{
+    margin-left: 200px;
     margin-top: 40px;
-    margin-left: 25%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 0.2fr 1fr;
     grid-template-areas: 
     'titulo3 imagen3'
     'parrafo3 imagen3';
-    width: 50%;
+    width: 1000px;
     height: 300px;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
@@ -174,10 +174,13 @@ ul ul a{
 .titulo3{
     grid-area: titulo3;
     font-size: 37px;
+    justify-self: end;
 }
 
 .imagen3{
     grid-area: imagen3;
+    width: 250px;
+    height: 300px;
 }
 
 .imagen3 img{
@@ -195,14 +198,13 @@ ul ul a{
 
 #grid-contenedor4{
     margin-top: 50px;
-    margin-left: 25%;
+    margin-left: 80px;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 0.4fr 1fr;
     grid-template-areas: 
     'imagen2 titulo2'
     'imagen2 parrafo2';
-    width: 50%;
     height: 300px;
     grid-column-gap: 25px;
 
@@ -214,8 +216,8 @@ ul ul a{
 
 .imagen4 img{
     border-radius: 50%;
-    width: 380px;
-    height: 380px;
+    width: 390px;
+    height: 350px;
 }
 
 .titulo4{
@@ -231,10 +233,10 @@ ul ul a{
 /* Footer */
 
 #footer{
-    margin-top: 200px;
+    margin-top: 100px;
     height: 220px;
     width: 100%;
-    background-color: aqua;
+    background-color: #384001;
     
 }
 
@@ -251,9 +253,10 @@ ul ul a{
     flex-direction: row;
     width: 380px;
     height: 34px;
-    background-color: blue;
+    background-color: #651800;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 10px;
 }
 
 .menu{
@@ -261,13 +264,18 @@ ul ul a{
     font-size: 25px;
 }
 
+.link{
+    text-decoration: none;
+    color: white;
+}
+
 .redes{
     margin-left: 45%;
     font-size: 25px;
+    color: white;
 }
 
 #redessociales{
-    
     margin-left: 788px;
     display: flex;
     flex-direction: row;
@@ -277,4 +285,5 @@ ul ul a{
 #copyright{
     font-size: 25px;
     margin-left: 25px;
+    color: white;
 }
