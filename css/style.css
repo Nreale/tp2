@@ -77,3 +77,100 @@ ul ul a{
     margin-left: 20px;
 }
 
+/* Grid Principal */
+
+#grid-container{
+    padding: 60px 0px 0px 0px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulo mapa"
+        "parrafo mapa"
+        "video video"
+        "tituloH tituloH"
+        "parrafo2 foto2"
+        "linea linea";
+
+    height: 1200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+
+.titulo{
+    background-color: rgb(138, 177, 115);
+    grid-area: titulo;
+    margin: 0px 0px 0px 60px;
+    padding: 10px;
+    height: 55px;
+    font-size: 25px;
+}
+.parrafo{
+    padding: 10px;
+    background-color: rgb(216, 255, 211);
+    grid-area: parrafo;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px 0px 60px 60px;
+}
+.fotoprincipal{
+    grid-area: mapa;
+    margin: 0px 60px 60px 0px;
+    height: 400px;
+}
+
+.video{
+    background-color: rgb(138, 177, 115);
+    grid-area: video;
+    display: flex;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia{
+    background-color: darkmagenta;
+    grid-area: tituloH;
+    transform: translate(0px, -30px);
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background: url(../assets/imagenes/historia.png) center;
+    background-size: cover;
+}
+
+.historia h1{
+    margin: 44.5%;
+    font-size: 50px;
+    color: white;
+}
+
+.parrafo2{
+    background-color: gold;
+    grid-area: parrafo2;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    margin: 0px 0px 0px 60px;
+}
+
+.foto2{
+    background-color: springgreen;
+    grid-area: foto2;
+    margin: 0px 60px 0px 0px;
+}
+
+.linea{
+    background-color: rgb(184, 184, 184);
+    height: 5px;
+    margin: 60px;
+    grid-area: linea;
+}
