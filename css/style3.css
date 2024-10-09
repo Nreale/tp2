@@ -273,11 +273,11 @@ footer{
     margin-top: 100px;
 }
 
-#grid-container:hover .front {
+.foto1:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-#grid-container:hover .back {
+.foto1 .back {
     transform: perspective(600px) rotateY(360deg);
 }
 
