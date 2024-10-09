@@ -194,3 +194,69 @@ ul ul a{
     margin: 10px;
     row-gap: 20px;
 }
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+    height: 260px;
+    width: 100%;
+    background-color: #384001;  
+}
+
+#menu{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px; 
+    
+}
+
+#menu2{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    height: 34px;
+    background-color: #651800;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.menu{
+    flex-direction: row;
+    font-size: 25px;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+    margin-left: 45%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+#redessociales{
+    margin-left: 788px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#copyright{
+    font-size: 25px;
+    margin-left: 25px;
+    color: white;
+}
+
+.copyR{
+    margin: 40px 0px 40px 0px;
+    background-color: #384001;
+}

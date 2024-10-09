@@ -29,12 +29,12 @@ header{
 
 /* Menu */
 
-ul{
+.ul{
     list-style: none;
     font-size: 0;
 }
 
-li{
+.li{
     display: inline-block;
     width: 25%;
     position: relative;
@@ -43,22 +43,22 @@ li{
     margin: 6px 0px 8px 0px;
 }
 
-ul ul{
+.ul ul{
     position: absolute; 
     display: none;
-    background-color: black;
-}
+    
+} 
 
-ul ul li{
+.ul ul li{
     display: block;
 }
 
-ul li:hover ul{
+.ul li:hover ul{
     display: block;
     background-color: transparent;
 }
 
-li a{
+.li a{
     text-decoration: none;
     color: white;
 }
@@ -67,10 +67,10 @@ nav{
     background-color: #651800;
 }
 
-ul li:hover{
+.ul li:hover{
     background-color: #77270f ;
 }
-ul ul a{
+.ul ul a{
     text-decoration: none;
     color: black;
     margin-left: 20px;
@@ -82,7 +82,7 @@ ul ul a{
 
 #grid-contenedor1{
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 210px;
     margin-right: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -199,13 +199,14 @@ ul ul a{
 #grid-contenedor4{
     margin-top: 50px;
     margin-left: 80px;
+    margin-right: 80px;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 0.4fr 1fr;
     grid-template-areas: 
     'imagen2 titulo2'
     'imagen2 parrafo2';
-    height: 300px;
+    height: 340px;
     grid-column-gap: 25px;
 
 }
@@ -228,16 +229,16 @@ ul ul a{
 .parrafo4{
     grid-area: parrafo2;
     font-size: 25px;
+    
 }
 
 /* Footer */
 
-#footer{
+footer{
     margin-top: 100px;
-    height: 220px;
+    height: 260px;
     width: 100%;
-    background-color: #384001;
-    
+    background-color: #384001;  
 }
 
 #menu{
@@ -257,11 +258,13 @@ ul ul a{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 .menu{
     flex-direction: row;
     font-size: 25px;
+    
 }
 
 .link{
@@ -271,6 +274,8 @@ ul ul a{
 
 .redes{
     margin-left: 45%;
+    margin-bottom: 40px;
+    margin-top: 40px;
     font-size: 25px;
     color: white;
 }
@@ -286,4 +291,75 @@ ul ul a{
     font-size: 25px;
     margin-left: 25px;
     color: white;
+}
+
+.copyR{
+    margin: 40px 0px 40px 0px;
+    background-color: #384001;
+}
+
+/* Flex Box y Carrousel */
+
+#padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background:  rgb(138, 177, 115);
+    border-radius: 40px;
+    margin: 80px 120px 200px 120px;;
+}
+
+.hijo1{
+    margin-top: 40px;
+}
+.hijo2{
+    margin: 40px 80px 0px 80px;
+}
+
+.slider-blox {
+    height: auto;
+    margin: 50px  auto;
+    overflow: hidden;
+}
+
+.slider-blox ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-blox li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-blox img {
+    width: 50%;
+    border-radius: 40px;
+    
+}
+
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    70% { margin-left: -100%;}
+
+    75% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    .slider-blox {
+        width: 100%;
+    }
 }
