@@ -182,13 +182,24 @@ ul ul a{
     display: flex;
     margin: 0px 0px 0px 60px;
     padding: 10px;
+    transition: transform 0.5s;
+}
+
+.parrafo2:hover{
+    transform: scale(1.05);
 }
 
 .foto2{
     grid-area: foto2;
     margin: 0px 60px 0px 0px;
     height: 300px;
+    transition: transform 0.5s;
 }
+
+.foto2:hover{
+    transform: scale(1.05);
+}
+
 
 .linea{
     background-color: rgb(184, 184, 184);
