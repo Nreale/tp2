@@ -26,7 +26,6 @@ header{
     margin: 35px 30px 35px 50px; 
 } 
 
-
 /* Gradients */
 
 .gradient{
@@ -38,7 +37,6 @@ header{
     height: 40px;
     background: linear-gradient(white, #2E5902);
 }
-
 
 /* Menu */
 
@@ -108,7 +106,6 @@ nav{
     height: 300px;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
-    
 }   
 
 .titulo1{
@@ -152,7 +149,6 @@ nav{
     'imagen2 parrafo2';
     height: 300px;
     grid-column-gap: 25px;
-
 }
 
 .imagen2{
